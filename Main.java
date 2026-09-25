@@ -8,7 +8,7 @@ public class Main {
         
         estudiante1.Estudiar();
         estudiante1.aprobado = estudiante1.estaAprobado(4.6);
-
+        estudiante1.Estudiar();
         // int edad = 20;
         // double descuento = 0.10;
 
