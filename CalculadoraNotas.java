@@ -1,5 +1,6 @@
-/*
-*Esta clase es para calcular notas.
+/**
+ *
+ * CalculadoraNotas
  */
 public class CalculadoraNotas {
     private double nota1;
@@ -37,14 +38,18 @@ public class CalculadoraNotas {
     public boolean isAprobado() {
         return aprobado;
     }
+    /**
+     * 
+     * @param nota1
+     * @param nota2
+     * @param nota3
+     * @return
+     */
     public double calcularPromedio(double nota1, double nota2, double nota3) {
         //La nota final es el equivalente a sumar las 3 y dividirlas por 3.
         return (nota1 + nota2 + nota3) / 3;
     }
-    /**
-    *@return retorna la nota final
-    *para esto se le entrega @param nota1, @param nota2 y @param nota3
-    **/
+
 
     /**
     * Determina si el estudiante aprueba según su nota final.
