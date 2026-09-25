@@ -4,9 +4,10 @@
 public class Main {
     public static void main(String [] args) {
 
-        Estudiante estudiante1 = new Estudiante("Juan", 28, "Gastronomía");
-
+        Estudiante estudiante1 = new Estudiante("Juan", 28, "Gastronomía",0,false  );
+        
         estudiante1.Estudiar();
+        estudiante1.estaAprobado(4.6);
 
         // int edad = 20;
         // double descuento = 0.10;
