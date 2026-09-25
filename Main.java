@@ -2,13 +2,20 @@
 // import java.util.InputMismatchException;
 
 public class Main {
+    public static boolean estaAprobado(double nota) {
+        return nota >= 5.0;
+    }
+
     public static void main(String [] args) {
 
-        Estudiante estudiante1 = new Estudiante("Juan", 28, "Gastronomía",0,false  );
-        
+        Estudiante estudiante1 = new Estudiante("Juan", 28, "Gastronomía",0);
+
         estudiante1.Estudiar();
-        estudiante1.aprobado = estudiante1.estaAprobado(4.6);
-        estudiante1.Estudiar();
+        CalculadoraNotas alumno1 = new CalculadoraNotas(2.9, 5.0, 6.0);
+
+        alumno1.setPromedio(3.0, 6.0, 4.0);
+        double promedio = alumno1.getPromedio();
+        boolean aprobado = estaAprobado(5.0);
         // int edad = 20;
         // double descuento = 0.10;
 
@@ -28,7 +35,7 @@ public class Main {
         //     System.out.println("Edad registrada: " + edad + "%nAcceso autorizado.");} else {
         //         System.out.println("Acceso restringido. ");
         //     }
-        // /* Aquí va el catch en caso de que ocurra el error de arriba lo atrape 
+        // /* Aquí va el catch en caso de que ocurra el error de arriba lo atrape
         // el InputMismatchException, así no arruinar el proceso y que le podamos
         // entregar un mensaje a la persona de qué error cometió.*/
         // }
