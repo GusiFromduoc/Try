@@ -2,20 +2,15 @@
 // import java.util.InputMismatchException;
 
 public class Main {
-    public static boolean estaAprobado(double nota) {
-        return nota >= 5.0;
-    }
-
     public static void main(String [] args) {
-
         Estudiante estudiante1 = new Estudiante("Juan", 28, "Gastronomía",0);
 
         estudiante1.Estudiar();
         CalculadoraNotas alumno1 = new CalculadoraNotas(2.9, 5.0, 6.0);
 
         alumno1.setPromedio(3.0, 6.0, 4.0);
-        double promedio = alumno1.getPromedio();
-        boolean aprobado = estaAprobado(5.0);
+        double promedio1 = alumno1.getPromedio();
+        boolean aprobado = alumno1.estaAprobado(promedio1);
         // int edad = 20;
         // double descuento = 0.10;
 
