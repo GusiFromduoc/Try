@@ -3,6 +3,14 @@ import java.util.InputMismatchException;
 
 public class Main {
     public static void main(String [] args) {
+
+
+
+        int edad = 20;
+        double descuento = 0.10;
+
+        double total = 50000;
+        double totalFinal = total - (total * descuento);
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingrese su nombre por favor: ");
